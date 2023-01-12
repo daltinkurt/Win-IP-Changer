@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<Data>
+		<Baslik>Okul</Baslik>
+		<Ip>192.268.0.212</Ip>
+		<Maske>255.255.255.0</Maske>
+		<Gateway>192.168.0.250</Gateway>
+		<Dns1>192.168.0.250</Dns1>
+		<Dns2></Dns2>
+	</Data>
+</root>

@@ -116,6 +116,7 @@
   <ItemGroup>
     <Content Include="DB.xml" />
     <Content Include="favicon.ico" />
+    <None Include="Readme.md" />
     <None Include="Resources\refresh.png" />
   </ItemGroup>
   <ItemGroup>

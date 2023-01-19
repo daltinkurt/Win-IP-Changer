@@ -209,7 +209,9 @@ namespace ChangeIP
 
             try
             {
-                btnUygula.Text = "Lütfen bekleyiniz";
+                Cursor.Current = Cursors.WaitCursor;
+
+                btnUygula.Text = "Lütfen bekleyiniz...";
                 btnUygula.Enabled = false;
                 NetworkManagement.SetIP(nic, new string[] { ip }, maske, agGecidi);
                 NetworkManagement.SetNameservers(nic, dnss.ToArray(), restart: false);
@@ -223,6 +225,8 @@ namespace ChangeIP
             }
             finally
             {
+                Cursor.Current = Cursors.Default;
+
                 btnUygula.Text = "Uygula";
                 btnUygula.Enabled = true;
             }
